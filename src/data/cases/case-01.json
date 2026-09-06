@@ -1,0 +1,626 @@
+{
+  "id": "case-01",
+  "level": 1,
+  "order": 1,
+  "title": "Raccoon v. Turtle",
+  "subtitle": "Negligent design of a frozen-confection containment sleeve",
+  "client": "Rosie Raccoon",
+  "opponent": "Terrence Turtle, d/b/a Turtle & Sons Wrapworks",
+  "factPattern": "On August 16, Rosie Raccoon was walking the loop trail in Thistledown Park with a single scoop of butter pecan. The cone was sheathed in a WRAPGUARD sleeve, manufactured by Turtle & Sons Wrapworks and advertised as GUARANTEED DRIP-PROOF.\n\nAs the ice cream melted, the bottom half of the sleeve peeled clean away from the seam. The cone slid, Rosie grabbed, Rosie fell. Nineteen woodland creatures watched it happen, and at least four of them were taking photographs. Rosie cried in front of a family of well-dressed otters and has not returned to the park since.\n\nShe sues Terrence Turtle for negligent design of the WRAPGUARD sleeve, seeking damages for her injuries and for severe and ongoing embarrassment.",
+  "disclosures": {
+    "preamble": "Defendant Terrence Turtle, by and through counsel, submits the following initial disclosures pursuant to Rule 31A. Defendant reserves all objections, including as to relevance, burden, and the general unfairness of this entire proceeding.",
+    "entries": [
+      {
+        "heading": "(a) Individuals likely to have discoverable information",
+        "text": "Terrence Turtle (owner, principal designer). Beatrice Badger (Quality Assurance lead; conducted product testing). Milo Mole (Riverbend plant floor supervisor). Fern Fox (in-house counsel and marketing). Hazel Hedgehog (customer relations). Defendant does not concede that any of these individuals know anything at all."
+      },
+      {
+        "heading": "(b) Description of documents by category and location",
+        "text": "Correspondence and business records are maintained on the Hollow Oak File Server (Warren Street headquarters). Manufacturing, testing, and inspection records are maintained in the Riverbend Plant Archive. Personal device backups and informal communications sync to the Acorn Cloud Drive. Loose paper lives at the Warren Street Office in a cabinet nobody has opened since the flood."
+      },
+      {
+        "heading": "(c) Product line identification",
+        "text": "The sleeve at issue is internally designated WRAPGUARD. Predecessor designs were internally designated Cone Sleeve. Defendant notes that WRAPGUARD passed every test it was given."
+      },
+      {
+        "heading": "(d) Computation of damages",
+        "text": "None. Defendant maintains that the sleeve performed as designed and that any peeling is attributable to consumer handling variance."
+      },
+      {
+        "heading": "(e) Insurance",
+        "text": "A policy exists. Defendant would rather not discuss it."
+      }
+    ],
+    "leads": [
+      "\"Consumer handling variance\" is doing a lot of work in paragraph (d).",
+      "Beatrice Badger ran the testing. Ask what the testing said.",
+      "WRAPGUARD is the label to pull. Cone Sleeve is the old line.",
+      "Correspondence lives on the Hollow Oak File Server."
+    ]
+  },
+  "requestFields": {
+    "mandatory": [
+      {
+        "id": "docType",
+        "label": "Document type",
+        "phrase": "all {value}",
+        "options": [
+          {
+            "value": "email",
+            "label": "electronic mail"
+          },
+          {
+            "value": "memo",
+            "label": "memoranda"
+          },
+          {
+            "value": "test-report",
+            "label": "test reports"
+          },
+          {
+            "value": "invoice",
+            "label": "invoices"
+          },
+          {
+            "value": "photograph",
+            "label": "photographs"
+          },
+          {
+            "value": "text-message",
+            "label": "text messages"
+          }
+        ],
+        "multi": true
+      },
+      {
+        "id": "dateAfter",
+        "label": "Created on or after",
+        "phrase": "created on or after {value}",
+        "options": [
+          {
+            "value": "2026-06-01",
+            "label": "June 1, 2026"
+          },
+          {
+            "value": "2026-07-01",
+            "label": "July 1, 2026"
+          },
+          {
+            "value": "2026-08-01",
+            "label": "August 1, 2026"
+          },
+          {
+            "value": "2026-08-10",
+            "label": "August 10, 2026"
+          },
+          {
+            "value": "2026-08-16",
+            "label": "August 16, 2026"
+          }
+        ]
+      }
+    ],
+    "discoverable": [
+      {
+        "id": "custodian",
+        "label": "Custodian",
+        "phrase": "in the custody of {value}",
+        "options": [
+          {
+            "value": "terrence-turtle",
+            "label": "Terrence Turtle"
+          },
+          {
+            "value": "beatrice-badger",
+            "label": "Beatrice Badger"
+          },
+          {
+            "value": "milo-mole",
+            "label": "Milo Mole"
+          },
+          {
+            "value": "fern-fox",
+            "label": "Fern Fox"
+          },
+          {
+            "value": "hazel-hedgehog",
+            "label": "Hazel Hedgehog"
+          }
+        ],
+        "unlockedBy": "stub"
+      },
+      {
+        "id": "location",
+        "label": "Location / server",
+        "phrase": "residing on the {value}",
+        "options": [
+          {
+            "value": "hollow-oak",
+            "label": "Hollow Oak File Server"
+          },
+          {
+            "value": "riverbend",
+            "label": "Riverbend Plant Archive"
+          },
+          {
+            "value": "acorn-cloud",
+            "label": "Acorn Cloud Drive"
+          },
+          {
+            "value": "warren-street",
+            "label": "Warren Street Office"
+          }
+        ],
+        "unlockedBy": "stub"
+      },
+      {
+        "id": "label",
+        "label": "Label / keyword",
+        "phrase": "labelled {value}",
+        "options": [
+          {
+            "value": "wrapguard",
+            "label": "WRAPGUARD"
+          },
+          {
+            "value": "cone-sleeve",
+            "label": "Cone Sleeve"
+          },
+          {
+            "value": "melt-test",
+            "label": "Melt Test"
+          },
+          {
+            "value": "recall",
+            "label": "Recall"
+          }
+        ],
+        "unlockedBy": "stub"
+      }
+    ]
+  },
+  "documentPool": [
+    {
+      "id": "doc-01",
+      "title": "RE: melt-test numbers, please advise",
+      "type": "email",
+      "date": "2026-07-14",
+      "custodian": "beatrice-badger",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard",
+        "melt-test"
+      ],
+      "baseLength": 1500,
+      "hotZones": [
+        {
+          "length": 44,
+          "value": 350,
+          "kind": "passage",
+          "flavor": "Beatrice Badger, July 14: the sleeve fails at 68 degrees. She notes, in writing, that QA ran the final melt test inside a walk-in freezer because it kept failing at room temperature."
+        },
+        {
+          "length": 24,
+          "value": 225,
+          "kind": "aside",
+          "flavor": "A one-line P.S. under the signature: “don’t put this bit in writing next time.”"
+        }
+      ]
+    },
+    {
+      "id": "doc-02",
+      "title": "FW: sleeve seam - not in writing please",
+      "type": "email",
+      "date": "2026-07-28",
+      "custodian": "terrence-turtle",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard"
+      ],
+      "baseLength": 1450,
+      "hotZones": [
+        {
+          "length": 64,
+          "value": 200,
+          "kind": "thread",
+          "flavor": "Terrence to Fern Fox: do not put the seam problem in writing. If anyone asks, we call it a consumer handling variance. He then puts that in writing."
+        }
+      ]
+    },
+    {
+      "id": "doc-03",
+      "title": "RE: batch 44-C delamination",
+      "type": "email",
+      "date": "2026-08-02",
+      "custodian": "milo-mole",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard",
+        "recall"
+      ],
+      "baseLength": 1600,
+      "hotZones": [
+        {
+          "length": 45,
+          "value": 275,
+          "kind": "passage",
+          "flavor": "Milo Mole flagged batch 44-C as delaminating on the line twelve days before Rosie's fall. Batch 44-C shipped anyway."
+        },
+        {
+          "length": 26,
+          "value": 250,
+          "kind": "aside",
+          "flavor": "One-line reply from Terrence, sent four minutes later: Ship it. We will eat the returns."
+        }
+      ]
+    },
+    {
+      "id": "doc-04",
+      "title": "Customer complaints - week of Aug 4",
+      "type": "email",
+      "date": "2026-08-06",
+      "custodian": "hazel-hedgehog",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard"
+      ],
+      "baseLength": 1550,
+      "hotZones": [
+        {
+          "length": 38,
+          "value": 250,
+          "kind": "passage",
+          "flavor": "Nine complaints in a single week, every one describing the same peel-away failure at the bottom seam. Rosie was the tenth."
+        }
+      ]
+    },
+    {
+      "id": "doc-05",
+      "title": "Re: legal review of WRAPGUARD claims",
+      "type": "email",
+      "date": "2026-08-12",
+      "custodian": "fern-fox",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard"
+      ],
+      "baseLength": 1500,
+      "hotZones": [
+        {
+          "length": 58,
+          "value": 200,
+          "kind": "thread",
+          "flavor": "Fern Fox asked, four days before the incident, whether GUARANTEED DRIP-PROOF was still defensible on the packaging. Nobody ever answered her."
+        }
+      ]
+    },
+    {
+      "id": "doc-06",
+      "title": "Melt Test Report 7-B",
+      "type": "test-report",
+      "date": "2026-07-16",
+      "custodian": "beatrice-badger",
+      "location": "riverbend",
+      "labels": [
+        "wrapguard",
+        "melt-test"
+      ],
+      "baseLength": 1700,
+      "hotZones": [
+        {
+          "length": 62,
+          "value": 325,
+          "kind": "thread",
+          "flavor": "Test Report 7-B: the adhesive seam loses eighty percent of its bond strength above 66 degrees. Filed to the archive. Circulated to nobody."
+        }
+      ]
+    },
+    {
+      "id": "doc-07",
+      "title": "Voluntary recall memorandum (draft)",
+      "type": "memo",
+      "date": "2026-08-09",
+      "custodian": "fern-fox",
+      "location": "acorn-cloud",
+      "labels": [
+        "wrapguard",
+        "recall"
+      ],
+      "baseLength": 1650,
+      "hotZones": [
+        {
+          "length": 68,
+          "value": 450,
+          "kind": "thread",
+          "flavor": "A complete voluntary recall memo, dated August 9 - one week before Rosie's fall - never sent. Across the top, in Terrence's handwriting: HOLD UNTIL Q4."
+        }
+      ]
+    },
+    {
+      "id": "doc-08",
+      "title": "Line photographs, seam failure (with captions)",
+      "type": "photograph",
+      "date": "2026-08-03",
+      "custodian": "hazel-hedgehog",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard"
+      ],
+      "baseLength": 1400,
+      "hotZones": [
+        {
+          "length": 26,
+          "value": 360,
+          "kind": "aside",
+          "flavor": "Under a photo of the failed seam, a technician has typed a one-line caption and left it there: “third one this week lol.”"
+        }
+      ]
+    },
+    {
+      "id": "doc-09",
+      "title": "Texts w/ Terrence re: the sleeve thing",
+      "type": "text-message",
+      "date": "2026-08-18",
+      "custodian": "beatrice-badger",
+      "location": "acorn-cloud",
+      "labels": [
+        "wrapguard"
+      ],
+      "baseLength": 1350,
+      "hotZones": [
+        {
+          "length": 22,
+          "value": 130,
+          "kind": "aside",
+          "flavor": "Two days after the incident, Terrence texts Beatrice: did the raccoon lady file yet. He asks this before anyone at Turtle & Sons has been told a raccoon was involved."
+        },
+        {
+          "length": 20,
+          "value": 130,
+          "kind": "aside",
+          "flavor": "And then, four minutes later: “delete this thread when you get a chance. love you. tell mom the cones are fine.”"
+        }
+      ]
+    },
+    {
+      "id": "doc-10",
+      "title": "RE: Rosie R. - incident report closeout",
+      "type": "email",
+      "date": "2026-08-17",
+      "custodian": "hazel-hedgehog",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard",
+        "recall"
+      ],
+      "baseLength": 1500,
+      "hotZones": [
+        {
+          "length": 44,
+          "value": 300,
+          "kind": "passage",
+          "flavor": "The internal incident report for Rosie's fall was opened, assigned claim number 44-C-0110, and closed NO DEFECT FOUND the same afternoon - before anyone inspected the wrapper."
+        },
+        {
+          "length": 22,
+          "value": 225,
+          "kind": "aside",
+          "flavor": "A single line at the bottom of the forward: “we knew in June.”"
+        }
+      ]
+    },
+    {
+      "id": "doc-11",
+      "title": "WRAPGUARD original design spec (rev. 1)",
+      "type": "memo",
+      "date": "2026-06-05",
+      "custodian": "terrence-turtle",
+      "location": "hollow-oak",
+      "labels": [
+        "wrapguard",
+        "cone-sleeve"
+      ],
+      "baseLength": 1900,
+      "hotZones": [
+        {
+          "length": 52,
+          "value": 180,
+          "kind": "passage",
+          "flavor": "The original spec called for a double-bonded seam. A margin note reads: single seam saves 1.2 cents/unit. Approved - TT."
+        }
+      ]
+    },
+    {
+      "id": "doc-12",
+      "title": "Invoice 8871 - replacement sleeve stock",
+      "type": "invoice",
+      "date": "2026-07-20",
+      "custodian": "milo-mole",
+      "location": "riverbend",
+      "labels": [
+        "cone-sleeve"
+      ],
+      "baseLength": 1300,
+      "hotZones": [
+        {
+          "length": 22,
+          "value": 90,
+          "kind": "aside",
+          "flavor": "Four hundred pallets of replacement sleeve stock, quietly reordered on July 20. Nobody reorders four hundred pallets of something that works."
+        }
+      ]
+    },
+    {
+      "id": "doc-13",
+      "title": "Cafeteria menu, July",
+      "type": "email",
+      "date": "2026-07-02",
+      "custodian": "hazel-hedgehog",
+      "location": "hollow-oak",
+      "labels": [],
+      "baseLength": 1850,
+      "hotZones": []
+    },
+    {
+      "id": "doc-14",
+      "title": "Parking lot repaving notice",
+      "type": "email",
+      "date": "2026-07-09",
+      "custodian": "milo-mole",
+      "location": "warren-street",
+      "labels": [],
+      "baseLength": 2000,
+      "hotZones": []
+    },
+    {
+      "id": "doc-15",
+      "title": "RE: RE: RE: office chili cook-off",
+      "type": "email",
+      "date": "2026-08-05",
+      "custodian": "beatrice-badger",
+      "location": "hollow-oak",
+      "labels": [],
+      "baseLength": 2200,
+      "hotZones": []
+    },
+    {
+      "id": "doc-16",
+      "title": "Vendor list update Q3",
+      "type": "email",
+      "date": "2026-06-28",
+      "custodian": "terrence-turtle",
+      "location": "hollow-oak",
+      "labels": [],
+      "baseLength": 1950,
+      "hotZones": []
+    },
+    {
+      "id": "doc-17",
+      "title": "Q2 all-hands deck notes",
+      "type": "memo",
+      "date": "2026-06-15",
+      "custodian": "fern-fox",
+      "location": "acorn-cloud",
+      "labels": [],
+      "baseLength": 2100,
+      "hotZones": []
+    },
+    {
+      "id": "doc-18",
+      "title": "Photo: new lobby signage",
+      "type": "photograph",
+      "date": "2026-07-25",
+      "custodian": "hazel-hedgehog",
+      "location": "warren-street",
+      "labels": [],
+      "baseLength": 1600,
+      "hotZones": []
+    },
+    {
+      "id": "doc-19",
+      "title": "Invoice 9002 - outside counsel",
+      "type": "invoice",
+      "date": "2026-08-20",
+      "custodian": "fern-fox",
+      "location": "warren-street",
+      "labels": [],
+      "baseLength": 1750,
+      "hotZones": []
+    },
+    {
+      "id": "doc-20",
+      "title": "Text thread: lunch",
+      "type": "text-message",
+      "date": "2026-07-11",
+      "custodian": "milo-mole",
+      "location": "acorn-cloud",
+      "labels": [],
+      "baseLength": 1500,
+      "hotZones": []
+    }
+  ],
+  "scoringConfig": {
+    "compressionCurve": [
+      1,
+      0.62,
+      0.4,
+      0.28
+    ],
+    "minDocumentLength": 140,
+    "windowWidth": 34,
+    "extraDocTypeCost": 100,
+    "captureThreshold": 0.6,
+    "laborTiers": [
+      {
+        "id": "solo",
+        "cost": 0,
+        "effort": 3000,
+        "box": {
+          "w": 6,
+          "h": 4
+        },
+        "label": "On your own",
+        "blurb": "One associate. One desk lamp. Whatever gets read, you read."
+      },
+      {
+        "id": "team",
+        "cost": 150,
+        "effort": 7200,
+        "box": {
+          "w": 8,
+          "h": 5
+        },
+        "label": "The small-mammal team",
+        "blurb": "Three associates and a pot of something strong.",
+        "default": true
+      },
+      {
+        "id": "allhands",
+        "cost": 400,
+        "effort": 14400,
+        "box": {
+          "w": 10,
+          "h": 6
+        },
+        "label": "All hands",
+        "blurb": "Everyone stays. Somebody sleeps under a desk."
+      }
+    ],
+    "readingStyles": [
+      {
+        "id": "skim",
+        "width": 24,
+        "effort": 14,
+        "catches": [
+          "aside"
+        ],
+        "label": "Skim",
+        "blurb": "Many quick glances. Great at spotting a short damning line; a long passage will slip straight past."
+      },
+      {
+        "id": "read",
+        "width": 34,
+        "effort": 34,
+        "catches": [
+          "aside",
+          "passage"
+        ],
+        "label": "Read",
+        "blurb": "The house standard. Handles most of what a document throws at you.",
+        "default": true
+      },
+      {
+        "id": "pore",
+        "width": 54,
+        "effort": 60,
+        "catches": [
+          "passage",
+          "thread"
+        ],
+        "label": "Pore over",
+        "blurb": "Few passes, slow and complete. The only way to get through a long buried passage — and you will see far fewer pages."
+      }
+    ]
+  },
+  "moneyThreshold": 1200
+}
