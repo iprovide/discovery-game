@@ -1,0 +1,50 @@
+# Build the game and publish it to GitHub Pages on every push to main.
+#
+# Playtesters get https://iprovide.github.io/discovery-game/ and it is always
+# whatever is on main. Nobody has to run a build.
+name: Deploy to Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Let a run finish rather than cancelling it, so a deploy is never half-done.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - run: npm install
+      # The scan engine is plain ESM with no dependencies, so the balance
+      # harness runs in CI. It doesn't assert anything yet — it is here so a
+      # change that makes the engine throw fails the build rather than
+      # shipping a game that crashes on "File and pack".
+      - run: node tools/sweep.mjs 20
+      # GITHUB_SHA is read by vite.config.js and stamped into feedback reports.
+      - run: npm run build
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

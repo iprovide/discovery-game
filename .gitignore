@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.DS_Store
+_to_delete/
+_build-src.tgz
+
+# Design docs stay out of the public repo on purpose. CHECKLIST.md names the
+# best plan for every request and prints the yield table, so a playtester who
+# reads it is a burned playtester. Remove these four lines once the game is out
+# of playtest and the docs are worth versioning.
+GAMEPLAN.md
+CHECKLIST.md
+docs/
+Notes on Phase *.txt
+Claude outputs/
